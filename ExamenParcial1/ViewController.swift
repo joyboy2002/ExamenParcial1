@@ -7,6 +7,7 @@
 
 import UIKit
 
+var game : String = ""
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,5 +16,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func Siguiente(_ sender: UIButton) {
+        
+        game = sender.currentTitle ?? ""
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let menu2 = segue.destination as? ViewControllerMenu2
+        
+        menu2?.juegoRecibido = game
+    }
 }
 

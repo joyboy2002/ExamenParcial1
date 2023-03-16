@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1026C1029C2A47F00370C0A /* ViewControllerMenu2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1026C0F29C2A47F00370C0A /* ViewControllerMenu2.swift */; };
+		F1026C1229C2AC8500370C0A /* Preguntados.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1026C1129C2AC8500370C0A /* Preguntados.swift */; };
 		F1BAC2A829BFF5520019D841 /* Matematiks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BAC2A729BFF5520019D841 /* Matematiks.swift */; };
 		F1DD9CA529BFE3ED00DD6342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD9CA429BFE3ED00DD6342 /* AppDelegate.swift */; };
 		F1DD9CA729BFE3ED00DD6342 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DD9CA629BFE3ED00DD6342 /* SceneDelegate.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1026C0F29C2A47F00370C0A /* ViewControllerMenu2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMenu2.swift; sourceTree = "<group>"; };
+		F1026C1129C2AC8500370C0A /* Preguntados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preguntados.swift; sourceTree = "<group>"; };
 		F1BAC2A729BFF5520019D841 /* Matematiks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matematiks.swift; sourceTree = "<group>"; };
 		F1DD9CA129BFE3ED00DD6342 /* ExamenParcial1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenParcial1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1DD9CA429BFE3ED00DD6342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		F1DD9C9829BFE3EC00DD6342 = {
 			isa = PBXGroup;
 			children = (
+				F1026C1129C2AC8500370C0A /* Preguntados.swift */,
+				F1026C0F29C2A47F00370C0A /* ViewControllerMenu2.swift */,
 				F1BAC2A729BFF5520019D841 /* Matematiks.swift */,
 				F1DD9CA329BFE3ED00DD6342 /* ExamenParcial1 */,
 				F1DD9CBA29BFE3EE00DD6342 /* ExamenParcial1Tests */,
@@ -261,9 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1026C1029C2A47F00370C0A /* ViewControllerMenu2.swift in Sources */,
 				F1DD9CA929BFE3ED00DD6342 /* ViewController.swift in Sources */,
 				F1DD9CA529BFE3ED00DD6342 /* AppDelegate.swift in Sources */,
 				F1DD9CA729BFE3ED00DD6342 /* SceneDelegate.swift in Sources */,
+				F1026C1229C2AC8500370C0A /* Preguntados.swift in Sources */,
 				F1BAC2A829BFF5520019D841 /* Matematiks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

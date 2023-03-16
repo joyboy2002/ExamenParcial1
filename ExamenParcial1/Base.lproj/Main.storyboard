@@ -17,33 +17,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APB-Ci-ObD">
-                                <rect key="frame" x="138" y="256" width="117" height="35"/>
+                                <rect key="frame" x="138" y="243" width="117" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Matematicas"/>
                                 <connections>
-                                    <segue destination="Isk-a0-I55" kind="show" id="AgH-st-gv9"/>
+                                    <action selector="Siguiente:" destination="BYZ-38-t0r" eventType="touchDown" id="TCw-hz-2aU"/>
+                                    <segue destination="piN-kr-VOO" kind="show" identifier="" id="geM-Wq-utu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqW-eO-JAv">
-                                <rect key="frame" x="138" y="381" width="117" height="35"/>
+                                <rect key="frame" x="138" y="368" width="117" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Preguntados"/>
                                 <connections>
-                                    <segue destination="FMR-VX-gf9" kind="show" id="omR-uA-dS5"/>
+                                    <action selector="Siguiente:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIe-a3-Llw"/>
+                                    <segue destination="piN-kr-VOO" kind="show" identifier="" id="YDI-DH-cez"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-8P-g0B">
-                                <rect key="frame" x="159" y="500" width="75" height="35"/>
+                                <rect key="frame" x="138" y="487" width="117" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Oca"/>
                                 <connections>
-                                    <segue destination="zct-AJ-wtF" kind="show" id="fyr-9g-Hu7"/>
+                                    <action selector="Siguiente:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsI-Ro-sro"/>
+                                    <segue destination="piN-kr-VOO" kind="show" identifier="ocaSegue" id="dLu-r8-Wd8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,7 +57,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909" y="-448"/>
+            <point key="canvasLocation" x="907.63358778625945" y="-448.59154929577466"/>
+        </scene>
+        <!--View Controller Menu2-->
+        <scene sceneID="sKV-PH-gXH">
+            <objects>
+                <viewController id="piN-kr-VOO" customClass="ViewControllerMenu2" customModule="ExamenParcial1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="974-3H-xX5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPO-wj-ooo">
+                                <rect key="frame" x="138" y="269" width="117" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Principiante"/>
+                                <connections>
+                                    <action selector="irAlJuego:" destination="piN-kr-VOO" eventType="touchDown" id="zyy-F6-4pL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCa-Ts-iAK">
+                                <rect key="frame" x="138" y="391" width="117" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Intermedio"/>
+                                <connections>
+                                    <action selector="irAlJuego:" destination="piN-kr-VOO" eventType="touchUpInside" id="zFh-ga-6bu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N03-it-ybe">
+                                <rect key="frame" x="138" y="510" width="117" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Avanzado"/>
+                                <connections>
+                                    <action selector="irAlJuego:" destination="piN-kr-VOO" eventType="touchUpInside" id="Hbb-rT-CUz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kr7-K9-cYH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="twg-i1-8e3"/>
+                    <connections>
+                        <segue destination="Isk-a0-I55" kind="show" identifier="matematiksSegue" id="ulm-iY-22x"/>
+                        <segue destination="FMR-VX-gf9" kind="show" id="Sdf-4E-zP2"/>
+                        <segue destination="zct-AJ-wtF" kind="show" id="J4D-MU-Bev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aek-Gn-wRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1806.8702290076335" y="-450"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FTo-Jb-byn">
@@ -89,7 +145,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vidas: 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbi-Gm-aG4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vidas: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbi-Gm-aG4">
                                 <rect key="frame" x="270" y="147" width="123" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -191,12 +247,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z50-TD-xQh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26.717557251908396" y="343.66197183098592"/>
+            <point key="canvasLocation" x="963" y="365"/>
         </scene>
-        <!--View Controller-->
+        <!--Preguntados-->
         <scene sceneID="71Q-hd-UvC">
             <objects>
-                <viewController id="FMR-VX-gf9" sceneMemberID="viewController">
+                <viewController id="FMR-VX-gf9" customClass="Preguntados" customModule="ExamenParcial1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NnY-aU-cO5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDK-Pb-j6H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907.63358778625945" y="343.66197183098592"/>
+            <point key="canvasLocation" x="1844" y="365"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1h5-nh-9EP">
@@ -241,9 +297,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IJ-Qn-KAs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1714" y="344"/>
+            <point key="canvasLocation" x="2650" y="365"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YDI-DH-cez"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

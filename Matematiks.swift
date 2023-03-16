@@ -7,8 +7,11 @@
 
 import UIKit
 
-class Matematiks: UIViewController {
+var vidas = 0
+var scoreLimite = 0
 
+class Matematiks: UIViewController {
+    var dificultad = ""
     
     @IBOutlet weak var txtLifes: UILabel!
     @IBOutlet weak var txtScore: UILabel!
@@ -23,13 +26,31 @@ class Matematiks: UIViewController {
     @IBOutlet weak var txtOperador: UILabel!
     @IBOutlet weak var img: UIImageView!
     
+ 
     var score = 0
-           var vidas = 3
+ 
+
     var res = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(dificultad == "Principiante"){
+            vidas = 3
+            scoreLimite = 5
+            
+        }
+        else if(dificultad == "Intermedio"){
+            vidas = 2
+            scoreLimite = 7
+        }
+        else{
+            vidas = 1
+            scoreLimite = 10
+        }
 
+        txtLifes.text = "Vidas: " +  String(vidas)
+        
         cambiar()
     }
     
@@ -53,7 +74,9 @@ class Matematiks: UIViewController {
     
     func cambiar(){
         
-        if(score >= 10){
+        txtScore.text = "Score: " + String(score)
+        
+        if(score >= scoreLimite){
             btn1.isEnabled = false
             btn2.isEnabled = false
             btn3.isEnabled = false
