@@ -1,5 +1,5 @@
 //
-//  Preguntados.swift
+//  Oca.swift
 //  ExamenParcial1
 //
 //  Created by ISSC_611_2023 on 15/03/23.
@@ -7,12 +7,11 @@
 
 import UIKit
 
-class Preguntados: UIViewController {
+class Oca: UIViewController {
 
     var dificultad = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
         print(dificultad)
         // Do any additional setup after loading the view.
     }

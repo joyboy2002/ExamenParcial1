@@ -23,10 +23,33 @@ class ViewControllerMenu2: UIViewController {
         if(juegoRecibido == "Matematicas"){
             performSegue(withIdentifier: "matematiksSegue", sender: sender)
         }
+        else if(juegoRecibido == "Preguntados"){
+            performSegue(withIdentifier: "preguntadosSegue", sender: sender)
+        }
+        else{
+            performSegue(withIdentifier: "ocaSegue", sender: sender)
+        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let matematiks = segue.destination as! Matematiks
-        matematiks.dificultad = nivel
+        
+        if(juegoRecibido == "Matematicas"){
+            
+            let matematiks = segue.destination as! Matematiks
+                   matematiks.dificultad = nivel
+        }
+        else if(juegoRecibido == "Preguntados"){
+            
+            let preguntados = segue.destination as! Preguntados
+                 preguntados.dificultad = nivel
+        }
+        else{
+            let oca = segue.destination as! Oca
+                 oca.dificultad = nivel
+        }
+       
+       
+        
+     
     }
     
     /*

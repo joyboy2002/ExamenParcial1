@@ -104,8 +104,8 @@
                     <navigationItem key="navigationItem" id="twg-i1-8e3"/>
                     <connections>
                         <segue destination="Isk-a0-I55" kind="show" identifier="matematiksSegue" id="ulm-iY-22x"/>
-                        <segue destination="FMR-VX-gf9" kind="show" id="Sdf-4E-zP2"/>
-                        <segue destination="zct-AJ-wtF" kind="show" id="J4D-MU-Bev"/>
+                        <segue destination="FMR-VX-gf9" kind="show" identifier="preguntadosSegue" id="Sdf-4E-zP2"/>
+                        <segue destination="zct-AJ-wtF" kind="show" identifier="ocaSegue" id="J4D-MU-Bev"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aek-Gn-wRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -274,10 +274,10 @@
             </objects>
             <point key="canvasLocation" x="1844" y="365"/>
         </scene>
-        <!--View Controller-->
+        <!--Oca-->
         <scene sceneID="1h5-nh-9EP">
             <objects>
-                <viewController id="zct-AJ-wtF" sceneMemberID="viewController">
+                <viewController id="zct-AJ-wtF" customClass="Oca" customModule="ExamenParcial1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GKu-ww-X2h">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
